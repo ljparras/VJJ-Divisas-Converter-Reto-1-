@@ -128,11 +128,11 @@ List <objetos> info = <objetos>[
         ],),
         TextField(
           controller: text_origen,
-          decoration:  InputDecoration(labelText: "De ", hintText: "0"),
+          decoration:  InputDecoration(labelText: " De", hintText: "0"),
         ),
         TextField(
           controller: text_destino,
-          decoration:  InputDecoration(labelText: "a ", hintText: "0"),
+          decoration:  InputDecoration(labelText: "a", hintText: "0"),
         ),
         Divider(),
      
@@ -167,20 +167,20 @@ List <objetos> info = <objetos>[
 
                 if (op1 == "USD" && op2 == "COP"){
                 text_destino.text = 
-                (double.parse(text_origen.text) * 4.974).toString();
+                (double.parse(text_origen.text) * 4974).toString();
 
               } 
               else if (op1 == "COP" && op2 == "USD") {
                 text_destino.text = 
-                (double.parse(text_origen.text) / 4.974).toString();
+                (double.parse(text_origen.text) / 4974).toString();
               }  
               else if (op1 == "EUR" && op2 == "COP") {
                 text_destino.text = 
-                (double.parse(text_origen.text) * 5074).toString();
+                (double.parse(text_origen.text) * 5075).toString();
               }
               else if (op1 == "COP" && op2 == "EUR") {
                 text_destino.text = 
-                (double.parse(text_origen.text) / 5074).toString();
+                (double.parse(text_origen.text) / 5075).toString();
               }  
               
                else if (op1 == "EUR" && op2 == "USD") {
