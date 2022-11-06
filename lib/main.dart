@@ -102,7 +102,7 @@ List <objetos> info = <objetos>[
      body: Padding(padding: EdgeInsets.all(18),
      child: Column(
       children:[
-        Row(children: [Text("   Origen    "),
+        Row(children: [Text("   De    "),
         //esta es la lista de monedas >> Lista de doble convercion de manera iterativa
         DropdownButton
         (value: op1, items: moneda.map((e) {
@@ -115,7 +115,7 @@ List <objetos> info = <objetos>[
             });
         }),
 
-        Text("   Destino   "),
+        Text("   a   "),
         DropdownButton
         // esta es la lista 2 de monedas  
         (value:  op2, items: moneda2,
@@ -128,11 +128,11 @@ List <objetos> info = <objetos>[
         ],),
         TextField(
           controller: text_origen,
-          decoration:  InputDecoration(labelText: "Origen", hintText: "0"),
+          decoration:  InputDecoration(labelText: "De ", hintText: "0"),
         ),
         TextField(
           controller: text_destino,
-          decoration:  InputDecoration(labelText: "Destino", hintText: "0"),
+          decoration:  InputDecoration(labelText: "a ", hintText: "0"),
         ),
         Divider(),
      
@@ -176,11 +176,11 @@ List <objetos> info = <objetos>[
               }  
               else if (op1 == "EUR" && op2 == "COP") {
                 text_destino.text = 
-                (double.parse(text_origen.text) * 4.928).toString();
+                (double.parse(text_origen.text) * 5074).toString();
               }
               else if (op1 == "COP" && op2 == "EUR") {
                 text_destino.text = 
-                (double.parse(text_origen.text) / 4.928).toString();
+                (double.parse(text_origen.text) / 5074).toString();
               }  
               
                else if (op1 == "EUR" && op2 == "USD") {
