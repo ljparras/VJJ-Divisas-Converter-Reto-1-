@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'VJJ DIVISAS',
+      title: 'VJJ DIVISAS SAS',
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(
-        title: ' VJJ-Divisas Converter '),
+        title: ' Divisas-VJJ- Converter '),
       debugShowCheckedModeBanner: false,
     );
   }
